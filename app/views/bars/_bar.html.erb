@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col s12">
+    <%= button_to @clip, method: :patch, params: { points: bar.points }, class:"waves-effect waves-light btn #{bar.color} bar" do %>
+      <%= bar.name %>
+      <% if bar.points == @clip.points %>
+        <i class="large material-icons right">stars</i>
+      <% end %>
+    <% end %>
+  </div>
+</div>

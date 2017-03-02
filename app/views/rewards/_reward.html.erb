@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col s12">
+    <%= button_to reward_claims_path(reward.id), class:"waves-effect waves-light btn bar" do %>
+      <%= reward.name %> (<%= reward.cost %>)
+    <% end %>
+  </div>
+</div>

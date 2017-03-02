@@ -1,0 +1,2 @@
+class RewardClaim < ApplicationRecord
+end

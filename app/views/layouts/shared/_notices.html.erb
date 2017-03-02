@@ -1,0 +1,21 @@
+<% display = flash[:error].present? ? '' : 'display:none' %>
+<div class="row" style="<%= display %>">
+  <div class="col s12">
+    <div class="card red lighten-1">
+      <div class="card-content red-lighten-1">
+        <span class="card-title white-text">Uh-Oh!</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% display = flash[:notice].present? ? '' : 'display:none' %>
+<div class="row" style="<%= display %>">
+  <div class="col s12">
+    <div class="card green lighten-1">
+      <div class="card-content red-lighten-1">
+        <span class="card-title white-text">Success!</span>
+      </div>
+    </div>
+  </div>
+</div>

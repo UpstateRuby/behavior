@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Behavior</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/icon?family=Material+Icons" %>
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js" %>
+
+  </head>
+
+  <body>
+    <%= render 'layouts/shared/notices' %>
+    <%= yield %>
+  </body>
+</html>

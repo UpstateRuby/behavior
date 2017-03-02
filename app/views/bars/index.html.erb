@@ -1,0 +1,12 @@
+<div class="container">
+  <%= render @bars %>
+
+  <div class="row">
+    <div class="col s3 right">
+      <a class="waves-effect waves-light btn pink" href="#modal">
+        Claim Rewards: <%= current_child.total_rewards %>
+      </a>
+    </div>
+  </div>
+  <%= render 'rewards_modal' %>
+</div>
